@@ -80,9 +80,19 @@ gulp.task("clean:build", function() {
 });
 
 // *****************************************************************************
-gulp.task("copy:fonts", function() {
-  return gulp.src("./source/fonts/**/*.*").pipe(gulp.dest("./build/fonts"));
-});
+gulp.task(
+  "copy:fonts",
+  gulp.parallel(
+    function() {
+      return gulp.src("./source/fonts/**/*.*").pipe(gulp.dest("./build/fonts"));
+    },
+    function() {
+      return gulp
+        .src("node_modules/font-awesome/fonts/*")
+        .pipe(gulp.dest("build/fonts"));
+    }
+  )
+);
 
 // *****************************************************************************
 gulp.task(
@@ -104,7 +114,7 @@ gulp.task("copy", gulp.parallel("copy:fonts", "copy:images"));
 
 // *****************************************************************************
 gulp.task("watch", function() {
-  gulp.watch("source/template/**/*.pug", gulp.series("compile:pug"));
+  gulp.watch("source/templates/**/*.pug", gulp.series("compile:pug"));
   gulp.watch("source/styles/**/*.scss", gulp.series("compile:sass"));
 });
 

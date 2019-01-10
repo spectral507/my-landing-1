@@ -1,0 +1,30 @@
+// *****************************************************************************
+// font-awesome:
+
+$ npm install font-awesome --save
+
+// main.scss:
+@import "../../node_modules/font-awesome/scss/font-awesome";
+
+// gulpfile.js:
+gulp.task(
+  "copy:fonts",
+  gulp.parallel(
+    function() {
+      return gulp.src("./source/fonts/**/*.*").pipe(gulp.dest("./build/fonts"));
+    },
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    // копировать шрифты font-awesome в public директорию со шрифтами;
+    // путь к этой директории задается в $fa-font-path (default: "../fonts") в
+    // node_modules/font-awesome/scss/_variables.scss
+    //
+    function() {
+      return gulp
+        .src("node_modules/font-awesome/fonts/*")
+        .pipe(gulp.dest("build/fonts"));
+    }
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  )
+);
+
+// *****************************************************************************

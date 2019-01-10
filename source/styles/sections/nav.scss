@@ -1,0 +1,39 @@
+.nav {
+  display: inline-block;
+  margin-right: 15px;
+  padding-top: 7px;
+  vertical-align: top;
+
+  &-link {
+    color: #424242;
+    display: inline-block;
+    font-family: $ff-main-bold;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.3s;
+    vertical-align: top;
+
+    &:hover,
+    &:active {
+      color: #de2b24;
+    }
+
+    &::after {
+      background: #424242;
+      border-radius: 50%;
+      content: "";
+      display: inline-block;
+      height: 5px;
+      margin-left: 15px;
+      vertical-align: middle;
+      width: 5px;
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

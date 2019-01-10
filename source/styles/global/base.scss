@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $ff-main;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.clearfix {
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
