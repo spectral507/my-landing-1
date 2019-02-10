@@ -1,0 +1,28 @@
+.hero {
+  // bg-color bg-image bg-size/bg-position bg-repeat
+  background: #ccc url('../images/hero-bg.jpg') center/cover no-repeat;
+  color: #fff;
+  min-height: 59px;
+  padding: 174px 0;
+  text-align: center;
+
+  &-about {
+    font-family: $ff-main-bold;
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  &-title {
+    font-family: $ff-main-light;
+    margin-bottom: 27px;
+    margin-top: 0;
+  }
+
+  .button-text-uppercase {
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 21px 41px;
+  }
+}
