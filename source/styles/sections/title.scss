@@ -17,7 +17,7 @@
   &-with-bottom-line {
     position: relative;
 
-    &:after {
+    &::after {
       @include centerer-x;
       background: #424242;
       bottom: -16px;
