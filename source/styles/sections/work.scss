@@ -27,13 +27,13 @@
       padding: 130px 40px 75px;
       position: relative;
       text-align: center;
-    }
 
-    &::before {
-      @include sprite($work-item);
-      @include centerer-x;
-      content: '';
-      top: 74px;
+      &::before {
+        @include sprite($work-item);
+        @include centerer-x;
+        content: '';
+        top: 74px;
+      }
     }
   }
 
