@@ -1,0 +1,111 @@
+.form-section {
+  background-color: #1287bf;
+  color: #fff;
+  padding: 100px 0 110px;
+
+  .title {
+    margin-bottom: 12px;
+  }
+
+  .title-header {
+    font-size: 2.25rem;
+  }
+
+  .title-text {
+    font-size: 1.25rem;
+  }
+
+  .btn-down {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 65px;
+    margin: auto auto 20px;
+    position: relative;
+    width: 65px;
+  }
+
+  .arrow-down {
+    @include centerer-xy;
+
+    .fa {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.form {
+  background-color: #fff;
+  border-radius: 3px;
+  color: #828282;
+  margin: auto;
+  padding: 50px 50px 66px;
+  position: relative;
+  text-align: center;
+  width: 67%;
+
+  &-container {
+    padding-top: 30px;
+  }
+
+  &::before {
+    @include centerer-x;
+    border: 30px solid transparent;
+    border-bottom: 30px solid #fff;
+    content: '';
+    top: -59px;
+  }
+
+  &-close-button {
+    background: #de2b24;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 2rem;
+    height: 50px;
+    position: absolute;
+    right: -16px;
+    text-align: center;
+    top: -22px;
+    transition: 0.3s;
+    width: 50px;
+
+    &:hover {
+      background: lighten(#de2b24, 10%);
+    }
+
+    &-text {
+      left: 1px;
+      position: relative;
+      top: -2px;
+    }
+  }
+
+  &-text {
+    font-size: .9375rem;
+    line-height: 1.5;
+    margin-bottom: 33px;
+  }
+
+  &-fields {
+    margin-bottom: 36px;
+  }
+
+  &-input {
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    display: block;
+    font-size: .875rem;
+    margin: auto auto 8px;
+    padding: 18px 20px;
+    width: 76%;
+
+    &:focus {
+      box-shadow: 0 0 8px 1px rgba(0, 0, 0, .5);
+    }
+  }
+
+  .button {
+    border: 0;
+    padding: 15px 30px;
+  }
+}
