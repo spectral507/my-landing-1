@@ -1,0 +1,82 @@
+.footer {
+  &-top {
+    background: #2a2a2a;
+    padding: 88px 0 83px;
+    text-align: center;
+  }
+
+  &-bottom {
+    background: #515151;
+    padding: 26px;
+    text-align: center;
+  }
+
+  &-title {
+    color: #fff;
+    font-family: $ff-main-bold;
+    font-size: 1.8125rem;
+    margin-bottom: 20px;
+  }
+
+  &-links {
+    margin-bottom: 35px;
+
+    .fa {
+      color: #fff;
+    }
+  }
+
+  &-social {
+    border: 1px solid #515151;
+    border-radius: 3px;
+    margin-left: 20px;
+    padding: 15px;
+
+    &:hover {
+      border: 1px solid #de2b24;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &-text {
+    color: #cecece;
+    font-size: .875rem;
+    margin-bottom: 30px;
+  }
+
+  &-field {
+    margin: 0 auto 27px;
+    width: 67%;
+  }
+
+  &-input {
+    background: #515151;
+    border: 0;
+    color: #cecece;
+    font-size: .875rem;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .button {
+    background-color: initial;
+    border: 2px solid #515151;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: $ff-main-bold;
+    font-size: 1.0625rem;
+    padding: 15px 37px;
+
+    &:hover {
+      border: 2px solid #de2b24;
+    }
+  }
+
+  &-copy {
+    color: #cecece;
+    font-size: .875rem;
+  }
+}
