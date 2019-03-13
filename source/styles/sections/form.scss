@@ -3,6 +3,10 @@
   color: #fff;
   padding: 100px 0 110px;
 
+  @media (max-width: 810px) {
+    padding: 50px 0 55px;
+  }
+
   .title {
     margin-bottom: 12px;
   }
@@ -42,6 +46,11 @@
   position: relative;
   text-align: center;
   width: 67%;
+
+  @media (max-width: 810px) {
+    padding: 25px;
+    width: 90%;
+  }
 
   &-container {
     padding-top: 30px;

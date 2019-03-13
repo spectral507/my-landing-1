@@ -10,6 +10,27 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 41px 0 32px;
+
+    .button {
+      @media (max-width: 1080px) {
+        margin-right: 15px;
+      }
+    }
+
+    .logo {
+      @media (max-width: 1080px) {
+        margin-left: 15px;
+      }
+
+      @media (max-width: 1000px) {
+        margin-bottom: 15px;
+        margin-left: 0;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
   }
 }
 

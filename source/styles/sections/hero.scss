@@ -2,7 +2,7 @@
   // bg-color bg-image bg-size/bg-position bg-repeat
   background: #ccc url('../images/hero-bg.jpg') center/cover no-repeat;
   color: #fff;
-  min-height: 59px;
+  min-height: 590px;
   padding: 174px 0;
   text-align: center;
 
@@ -16,6 +16,11 @@
     font-family: $ff-main-light;
     margin-bottom: 27px;
     margin-top: 0;
+  }
+
+  @media (max-width: 599px) {
+    min-height: inherit;
+    padding: 100px 20px;
   }
 
   .button-text-uppercase {

@@ -7,7 +7,7 @@
 
   &-red {
     background: #de2b24;
-    transition: 0.3s;
+    transition: .3s;
 
     &:hover {
       background: lighten(#de2b24, 7%);

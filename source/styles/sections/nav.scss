@@ -1,17 +1,25 @@
 .nav {
   display: inline-block;
-  margin-right: 15px;
-  padding-top: 7px;
+  margin-left: 167px;
   vertical-align: top;
+
+  @media (max-width: 1030px) {
+    margin-left: 0;
+  }
+
+  @media (max-width: 1000px) {
+    margin-bottom: 25px;
+  }
 
   &-link {
     color: #424242;
     display: inline-block;
     font-family: $ff-main-bold;
+    font-size: .9rem;
     padding: 10px;
     text-decoration: none;
     text-transform: capitalize;
-    transition: 0.3s;
+    transition: .3s;
     vertical-align: top;
 
     &:hover,
@@ -28,6 +36,14 @@
       margin-left: 15px;
       vertical-align: middle;
       width: 5px;
+    }
+
+    @media (max-width: 530px) {
+      display: block;
+
+      &::after {
+        display: none;
+      }
     }
 
     &:last-child {

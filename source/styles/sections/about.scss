@@ -2,23 +2,45 @@
   padding: 99px 0 105px;
   text-align: center;
 
+  @media (max-width: 960px) {
+    padding: 40px 0 20px;
+  }
+
   &-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
     padding: 0 50px;
+
+    @media (max-width: 960px) {
+      justify-content: center;
+      padding: 0 25px;
+    }
   }
 
   &-item {
-    width: 25%;
+    width: 27%;
+
+    @media (max-width: 960px) {
+      box-sizing: border-box;
+      margin-bottom: 15px;
+      padding: 5px;
+      width: 50%;
+    }
+
+    @media (max-width: 665px) {
+      margin-bottom: 0;
+      padding: 0;
+      width: 100%;
+    }
   }
 
   &-header {
     color: #424242;
     font-family: $ff-main-bold;
     font-size: 1.375rem;
-    margin: 0 0 12px;
+    margin: 0 0 6px;
   }
 
   &-description {
