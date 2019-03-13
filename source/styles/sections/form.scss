@@ -30,6 +30,12 @@
 
   .arrow-down {
     @include centerer-xy;
+    color: #fff;
+    padding: 17px;
+
+    &:active {
+      color: #de2b24;
+    }
 
     .fa {
       font-size: 2.5rem;
@@ -71,11 +77,12 @@
     color: #fff;
     font-size: 2rem;
     height: 50px;
+    outline: none;
     position: absolute;
     right: -16px;
     text-align: center;
     top: -22px;
-    transition: 0.3s;
+    transition: .3s;
     width: 50px;
 
     &:hover {
